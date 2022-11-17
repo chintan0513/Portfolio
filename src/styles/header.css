@@ -15,7 +15,6 @@
 }
 
 .links a:hover{
-    color: pink;
+    color: #57BCDA;
     transition: ease-in-out 0.6s;
-
 }
