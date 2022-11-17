@@ -1,25 +1,59 @@
+.landing {
+    margin: 40px 0px;
+}
+
 .intro {
     display: flex;
     justify-content: space-between;
+    margin: 50px auto;
+    height: 100vh;
 }
 
 .typewrite {
-    font-size: 40px;
-    display: flex; 
+    font-size: 50px;
+    display: flex;
+    font-weight: 600; 
+    color: #57BCDA;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.image img{
+    width: 100%;
+    align-items: center;
+    max-width: 400px;
+    height: auto;
+}
+
+.projects {
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 15px;
-    margin: auto;
+    flex-direction: column;
 }
 
-.svg {
-    position: relative;
-    height: 500px;
-    text-align: center;
+h1 {
+    border-bottom: 1px solid #57BCDA;
+    padding: 10px auto;
+    font-size: 2.5rem;
 }
 
-img {
-    height: 150px;
-    border-radius: 5px;
-}
+@media only screen and (max-width: 400px) {
+    .typewrite{
+       font-size: 20px;
+       display: flex;
+        font-weight: 600; 
+        color: #57BCDA;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        padding: 5px 10px;
+    }
+    img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+  }

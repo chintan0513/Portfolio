@@ -1,7 +1,7 @@
 import '../styles/footer.css';
 import { BsInstagram, BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs';
 
-const Footer = () => {
+const Footer = () => { 
     return ( 
         <div className="footer">
             <div className="content">
@@ -11,20 +11,20 @@ const Footer = () => {
             </div>
             <div className="social-media">
                 <div className='link-group'>
-                    <span><BsInstagram /></span>    
-                    <a href='https://www.instagram.com/chintan0513/' target="_blank">Instagram</a>
+                    <span></span>    
+                    <a href='https://www.instagram.com/chintan0513/' rel="noreferrer" target="_blank"><BsInstagram /></a>
                 </div>   
                 <div className='link-group'>
-                    <span><BsFacebook /></span>
-                    <a href='https://www.facebook.com/' target="_blank">Facebook</a>
+                    <span></span>
+                    <a href='https://www.facebook.com/' rel="noreferrer"  target="_blank"><BsFacebook /></a>
                 </div> 
                 <div className='link-group'>
-                    <span><BsGithub /></span> 
-                    <a href='https://github.com/chintan0513' target="_blank">Github</a>
+                    <span></span> 
+                    <a href='https://github.com/chintan0513' rel="noreferrer"  target="_blank"><BsGithub /></a>
                 </div> 
                 <div className='link-group'>
-                    <span><BsLinkedin /></span>
-                    <a href='https://www.linkedin.com/in/chintan13/' target="_blank">LinkedIn</a>
+                    <span></span>
+                    <a href='https://www.linkedin.com/in/chintan13/' rel="noreferrer"  target="_blank"><BsLinkedin /></a>
                 </div>                      
             </div>
         </div>
