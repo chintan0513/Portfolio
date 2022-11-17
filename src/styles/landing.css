@@ -1,11 +1,11 @@
-.landing {
+.intro {
     display: flex;
     justify-content: space-between;
 }
 
 .typewrite {
     font-size: 40px;
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     text-align: center;

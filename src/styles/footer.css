@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     bottom: 10px;
     width: 100%;

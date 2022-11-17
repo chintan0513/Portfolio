@@ -24,7 +24,7 @@ const Footer = () => {
                 </div> 
                 <div className='link-group'>
                     <span><BsLinkedin /></span>
-                    <a href='https://www.linkedin.com/in/chintan13/' target="_blank">Linkedin</a>
+                    <a href='https://www.linkedin.com/in/chintan13/' target="_blank">LinkedIn</a>
                 </div>                      
             </div>
         </div>
