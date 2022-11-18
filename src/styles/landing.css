@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
 .landing {
     margin: 0;
     background: url('https://images.unsplash.com/photo-1532978379173-523e16f371f2?auto=format&fit=crop&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&q=80&w=1950');
+    border-bottom-right-radius: 1cm;
+    border-bottom-left-radius: 1cm;
 }
 
 .intro {
@@ -40,22 +43,16 @@
     padding: 15px 20px;
 }
 
-.projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-h1 {
+.h1 {
     border-bottom: 1px solid #57BCDA;
     padding: 10px auto;
     font-size: 2.5rem;
+    color: #111827;
 }
 
 @media only screen and (max-width: 400px) {
     .typewrite{
-       font-size: 20px;
+       font-size: 30px;
        display: flex;
         font-weight: 600; 
         color: #57BCDA;
@@ -65,18 +62,19 @@ h1 {
         padding: 5px 10px;
     }
 
+    hr{
+        /* transform: rotate(90deg);
+        padding: 0;
+        margin: 0; */
+        display: none;
+    }
+
     .name {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         align-items: center;
         display: flex;
         justify-content: center;
         text-align: center;
         padding: 0 3px;
-    }
-
-    img {
-        width: 100%;
-        max-width: 200px;
-        height: auto;
     }
   }

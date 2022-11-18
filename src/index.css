@@ -42,3 +42,7 @@ code {
   background: #57BCDA; 
 }
 
+::selection {
+  color: white;
+  background: #57BCDA;
+}

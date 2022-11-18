@@ -4,11 +4,14 @@
     align-items: center;
     background: rgb(32, 35, 42);
     width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
-.image{
-    height: 80px;
-    width: 80px;
+.image-logo{
+    height: 50px;
+    width: 50px;
+    padding: 0px 10px;
 }
 
 .links {
@@ -37,7 +40,7 @@
 
 @media only screen and (max-width: 400px) {
     
-    .image{
+    .image-logo{
         height: 50px;
         width: 50px;
     }

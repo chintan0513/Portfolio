@@ -1,4 +1,5 @@
 import About from "./About";
+import Contact from "./Contact";
 import Footer from "./Footer";
 import Header from "./Header";
 import Landing from "./Landing";
@@ -11,6 +12,7 @@ const Home = () => {
             <Landing />
             <About />
             <Projects />
+            <Contact />
             <Footer />
         </div>
      );
