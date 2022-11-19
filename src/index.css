@@ -5,18 +5,19 @@ html {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: Megrim, cursive;
-  /* background: rgb(32, 35, 42); */
   box-sizing: border-box;
   font-family: Megrim, cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code, p {
+code, p, h3 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  font-size: 0.9rem;
+    font-weight: 500;
+    font-size: 0.9rem;
   }
 
 /* width */

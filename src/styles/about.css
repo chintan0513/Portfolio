@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} 
 
 .image {
     display: flex;
@@ -75,16 +75,12 @@ hr {
     text-decoration: none;
     color: black;
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 5px;
 }
 
 .social-media a:hover, .link-group:hover {
     color: #5ecaec;
-}
-
-.social-media a:hover {
-    background: black;
 }
 
 @media only screen and (max-width: 400px) {

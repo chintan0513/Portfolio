@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 
 .landing {
+    display: flex;
+    justify-content: center;
     margin: 0;
     background: url('https://images.unsplash.com/photo-1532978379173-523e16f371f2?auto=format&fit=crop&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&q=80&w=1950');
     border-bottom-right-radius: 1cm;
@@ -11,7 +13,7 @@
     display: flex;
     justify-content: center;
     margin: 0px auto;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     flex-direction: column;
     text-transform: uppercase;
@@ -26,6 +28,45 @@
     color: white;
     font-size: 5rem;
 }
+
+.hand::before{
+    content: attr(data-hover);
+}
+
+.hand{
+    display: inline-block;
+    animation-name: wave-animation;
+    animation-duration: 3.0s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+}
+@keyframes wave-animation {
+    0% {
+    transform: rotate( 0.0deg)
+    }
+    10% {
+    transform: rotate(14.0deg)
+    }
+    20% {
+    transform: rotate(-8.0deg)
+    }
+    30% {
+    transform: rotate(14.0deg)
+    }
+    40% {
+    transform: rotate(-4.0deg)
+    }
+    50% {
+    transform: rotate(10.0deg)
+    }
+    60% {
+    transform: rotate( 0.0deg)
+    }
+    100% {
+    transform: rotate( 0.0deg)
+    }
+    }
+
 
 .my-name {
     color: #5F7FFF;
@@ -68,7 +109,7 @@
         margin: 0; */
         display: none;
     }
-
+ 
     .name {
         font-size: 2.7rem;
         align-items: center;
@@ -78,3 +119,9 @@
         padding: 0 3px;
     }
   }  
+
+  @media screen and (max-width: 780px) {
+   body {
+    overflow: visible;
+   }
+  }
