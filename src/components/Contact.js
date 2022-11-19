@@ -5,6 +5,7 @@ const Contact = () => {
     return ( 
         <div className="contact" id="contact">
             <h1 className="h1" style={{color:'white'}}>Contact Me</h1>
+            <p>Have a question? Ping me..</p>
             <div className="form">
                 <form className="form-group">
                     <input type="text" placeholder="Name" name="Name" className="Name"/>
