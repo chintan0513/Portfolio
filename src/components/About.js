@@ -36,6 +36,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                
                 <Skills />
         </div>
      );

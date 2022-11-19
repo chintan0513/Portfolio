@@ -1,6 +1,59 @@
 .skills {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+} 
+
+.skills-set {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills-sec {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .skills-set {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100px;
+        align-items: center;
+        margin: 0px auto;
+    }
+    
+    .skills-sec {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skill {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .parent {
+        margin: 10px;
+    }
 }
