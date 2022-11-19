@@ -1,6 +1,7 @@
 import pic from '../assets/46.jpg'
 import '../styles/about.css'
 import { BsInstagram, BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs';
+import Skills from './Skills';
 
 const About = () => {
     return ( 
@@ -35,6 +36,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                <Skills />
         </div>
      );
 }
