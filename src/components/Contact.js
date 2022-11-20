@@ -7,9 +7,8 @@ const Contact = () => {
 
     const [toSend, setToSend] = useState({
         from_name: '',
-        to_name: '',
-        message: '',
         reply_to: '',
+        message: ''
       });
 
     const onSubmit = (e) => {
@@ -20,17 +19,17 @@ const Contact = () => {
       toSend,
       'BEzHUk12PVKwoyiwf'
     )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch((err) => {
-        console.log('FAILED...', err);
-      });
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+    })
+    .catch((err) => {
+      console.log('FAILED...', err);
+    });
       };
 
       const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
-      };
+      };  
 
     return ( 
         <div className="contact" id="contact">
@@ -38,10 +37,9 @@ const Contact = () => {
             <p>Have a question? Ping me..</p>
             <div className="form">
                 <form className="form-group" onSubmit={onSubmit}>
-                    <input type="text" placeholder="From Name" value={toSend.from_name} onChange={handleChange} name="Name" className="Name"/>
-                    <input type="text" placeholder="To Name" value={toSend.to_name} onChange={handleChange} name="Name" className="Name"/>
-                    <input type="email" placeholder="Enter Email" value={toSend.reply_to} onChange={handleChange} name="Email" className="Email" />
-                    <textarea placeholder="Your Message" name="Message" value={toSend.message} onChange={handleChange} className="Message"></textarea>
+                    <input type='text'name='from_name'placeholder='Name'value={toSend.from_name} onChange={handleChange} className="Name"/>
+                    <input type='text' name='reply_to' placeholder='Your Email' value={toSend.reply_to} onChange={handleChange} />
+                    <textarea type='text' name='message' placeholder='Your Message' value={toSend.message} onChange={handleChange}></textarea>
                     <button type="submit" className="btn">Send</button>
                 </form>
             </div>
