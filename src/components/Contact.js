@@ -37,9 +37,9 @@ const Contact = () => {
             <p>Have a question? Ping me..</p>
             <div className="form">
                 <form className="form-group" onSubmit={onSubmit}>
-                    <input type='text'name='from_name'placeholder='Name'value={toSend.from_name} onChange={handleChange} className="Name"/>
-                    <input type='text' name='reply_to' placeholder='Your Email' value={toSend.reply_to} onChange={handleChange} />
-                    <textarea type='text' name='message' placeholder='Your Message' value={toSend.message} onChange={handleChange}></textarea>
+                    <input type='text'name='from_name'placeholder='Name'value={toSend.from_name} onChange={handleChange} required className="Name"/>
+                    <input type='email' name='reply_to' placeholder='Your Email' value={toSend.reply_to} onChange={handleChange} required />
+                    <textarea type='text' name='message' placeholder='Your Message' value={toSend.message} onChange={handleChange} required/>
                     <button type="submit" className="btn">Send</button>
                 </form>
             </div>
