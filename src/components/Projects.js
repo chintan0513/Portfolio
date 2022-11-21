@@ -1,33 +1,47 @@
 /* eslint-disable react/jsx-no-target-blank */
 import '../styles/projects.css';
-import projects, {} from '../projects';
+import {buttons} from '../projects';
+import React, { useState, useEffect } from "react";
+import { getProject, filterProject } from '../list';
 
 const Projects = () => {
+
+    const [filteredProject, setFilteredProject] = useState(null);
+    useEffect(() => {
+        setFilteredProject(getProject());
+    }, []);
+
+
+    const handleProject = (e) => {
+        let typoProject = e.target.value;
+        typoProject !== "all" ? setFilteredProject(filterProject(typoProject)) : setFilteredProject(getProject());
+    }
 
     return ( 
         <div id="projects" className='projects'>
             <h1 className="h1 title">Projects</h1>
             <div className="fproject">
-                <div className="buttons">
-                    <button className="filter-btn" data-filter id="btn1">All</button>
-                    <button className="filter-btn clear-btn" data-filter="HTML" id="btn2">HTML</button>
-                    <button className="filter-btn clear-btn" data-filter="CSS" id="btn3">CSS</button>
-                    <button className="filter-btn clear-btn" data-filter="JAVASCRIPT" id="btn4">JS</button>
-                    <button className="filter-btn clear-btn" data-filter="React.js" id="btn5">React.js</button>
-                    <button className="filter-btn clear-btn" data-filter="Contribution" id="btn6">Contribution</button>
-                    <button className="filter-btn clear-btn" data-filter="REST-API" id="btn7">REST-API</button>
-                    <button className="filter-btn clear-btn" data-filter="CSS" id="btn8">Bootstrap</button>
-                </div>
+            <div className="buttons">
+                {
+                    buttons && buttons.map((type, index) => (
+                       
+                            <button className="filter-btn" key={index} value={type.value} onClick={handleProject}>{type.name}</button>
+                        
+                    ))
+                }
+                </div>    
                 <div className="card">
-                    { projects.map(project => (
-                        <div className="fcard" key={project._id}>
-                            <a href={project.link} target="_blank" className="cardlink">
-                                <img className="iproject" src={project.image} alt="project"/>
-                                <h3>{project.title}</h3>
-                                <span className="span">Category - {project.category}</span>
-                            </a>
-                        </div>
-                    ))}
+                        {   
+                            filteredProject && filteredProject.map(project => (
+                               <div className="fcard" key={project._id}>
+                                    <a href={project.link} target="_blank" className="cardlink">
+                                    <img className="iproject" src={project.image} alt="project"/>
+                                    <h3>{project.title}</h3>
+                                    <span className="span">Category - {project.category}</span>
+                                    </a>
+                                </div> 
+                            ))
+                        }
                 </div>
             </div>
         </div>

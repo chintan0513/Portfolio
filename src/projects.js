@@ -1,8 +1,8 @@
-const projects = [
+export const projects = [
     {
         _id: "1",
       title: "Medical ChatBot",
-      typo: 'MERN' && "React.js",
+      typo: 'MERN',
       content:
         "Itchy eyes can be triggered by exposure to pollen, animal fur, mould, dust mites, make-up or eye drops.",
       category: "MERN stack React",
@@ -13,7 +13,7 @@ const projects = [
     {
         _id: "2",
       title: "Kalakari",
-      typo: 'HTML' && "CSS",
+      typo: "HTML CSS JS",
       content:
         "Itchy eyes can be triggered by exposure to pollen, animal fur, mould, dust mites, make-up or eye drops.",
       category: "HTML CSS JS ",
@@ -23,7 +23,7 @@ const projects = [
     {
         _id: "3",
       title: "Recipe App",
-      typo: 'JS' && "HTML" && "CSS",
+      typo: 'HTML CSS JS',
       content:
         "Itchy eyes can be triggered by exposure to pollen, animal fur, mould, dust mites, make-up or eye drops.",
       category: "HTML CSS JS ",
@@ -33,7 +33,7 @@ const projects = [
     {
       _id: "4",
     title: "Potter DB",
-    typo: 'contribution' && "react.js",
+    typo: 'contribution',
     content:
       "Itchy eyes can be triggered by exposure to pollen, animal fur, mould, dust mites, make-up or eye drops.",
     category: "HTML CSS JS ",
@@ -53,7 +53,7 @@ const projects = [
   {
       _id: "6",
     title: "ToDo List",
-    typo: 'HTML' && "css" && "JS",
+    typo: "JS",
     content:
       "Itchy eyes can be triggered by exposure to pollen, animal fur, mould, dust mites, make-up or eye drops.",
     category: "HTML CSS JS ",
@@ -62,4 +62,34 @@ const projects = [
   }
   
 ];
-module.exports = projects;
+
+export default projects;
+
+export const buttons = [
+  {
+    name: "All",
+    value: "all"
+  },
+  {
+    name: "HTML CSS JS",
+    value: "HTML CSS JS"
+  },
+  {
+    name: "React.JS",
+    value: "react.js"
+  },{
+    name: "Contribution",
+    value: "contribution"
+  },{
+    name: "REST-API",
+    value: "rest-api"
+  },
+  {
+    name: "Bootstrap",
+    value: "bootstrap"
+  },
+  {
+    name: "MERN",
+    value: "MERN"
+  }
+];
