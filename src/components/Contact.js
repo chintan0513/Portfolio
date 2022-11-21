@@ -2,6 +2,7 @@ import '../styles/contact.css';
 import Footer from './Footer'
 import { send } from 'emailjs-com';
 import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
 
@@ -20,6 +21,7 @@ const Contact = () => {
       'BEzHUk12PVKwoyiwf'
     )
     .then((response) => {
+      toast.success('Successfully toasted!')
       console.log('SUCCESS!', response.status, response.text);
     })
     .catch((err) => {
@@ -35,6 +37,7 @@ const Contact = () => {
         <div className="contact" id="contact">
             <h1 className="h1" style={{color:'white'}}>Contact Me</h1>
             <p>Have a question? Ping me..</p>
+            <div style={{fontFamily: 'source-code-pro'}}><Toaster/></div>
             <div className="form">
                 <form className="form-group" onSubmit={onSubmit}>
                     <input type='text'name='from_name'placeholder='Name'value={toSend.from_name} onChange={handleChange} required className="Name"/>

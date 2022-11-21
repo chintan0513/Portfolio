@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
 import '../styles/projects.css';
-import '../projects.js';
 import projects, {} from '../projects';
 
 const Projects = () => {
@@ -9,9 +8,6 @@ const Projects = () => {
         <div id="projects" className='projects'>
             <h1 className="h1 title">Projects</h1>
             <div className="fproject">
-                {/* <div className="heading">
-                    <h3>#All Projects</h3>
-                </div> */}
                 <div className="buttons">
                     <button className="filter-btn" data-filter id="btn1">All</button>
                     <button className="filter-btn clear-btn" data-filter="HTML" id="btn2">HTML</button>
@@ -34,21 +30,6 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
-            {/* <div className="aproject">
-                <p>#Featured Projects</p>
-                <div className="card">
-                    <div className="acard">
-                    </div>
-                </div>
-            </div>
-            
-            <div className="cproject">
-                <p>#Contribution Based Projects</p>
-                <div className="card">
-                    <div className="ccard">
-                    </div>
-                </div>
-            </div> */}
         </div>
      );
 }
