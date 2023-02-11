@@ -1,6 +1,7 @@
 import pic from '../assets/46.jpg'
 import '../styles/about.css'
 import { BsInstagram, BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs';
+import {SiCodechef} from 'react-icons/si';
 import Skills from './Skills';
 
 const About = () => {
@@ -25,7 +26,7 @@ const About = () => {
                                 <a href='https://www.instagram.com/chintan0513/' rel="noreferrer" target="_blank"><BsInstagram /></a>
                             </div>   
                             <div className='link-group'>
-                                <a href='https://www.facebook.com/' rel="noreferrer" target="_blank"><BsFacebook /></a>
+                                <a href='https://www.codechef.com/users/chintan13' rel="noreferrer" target="_blank"><SiCodechef /></a>
                             </div> 
                             <div className='link-group'>
                                 <a href='https://github.com/chintan0513' rel="noreferrer"  target="_blank"><BsGithub /></a>
