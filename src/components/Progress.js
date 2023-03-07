@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/skills.css';
 
-const Progress_bar = ({bgcolor,progress,height}) => {
-	
+const Progress_bar = ({ bgcolor, progress, height }) => {
+
 	const Parentdiv = {
 		height: height,
 		width: '100%',
@@ -10,15 +10,15 @@ const Progress_bar = ({bgcolor,progress,height}) => {
 		borderRadius: 40,
 		margin: 50
 	}
-	
+
 	const Childdiv = {
 		height: '100%',
 		width: `${progress}%`,
 		backgroundColor: bgcolor,
-		borderRadius:40,
+		borderRadius: 40,
 		textAlign: 'right'
 	}
-	
+
 	const progresstext = {
 		padding: 10,
 		color: 'black',
@@ -28,13 +28,13 @@ const Progress_bar = ({bgcolor,progress,height}) => {
 		justifyContent: 'center',
 		alignItems: 'center'
 	}
-		
+
 	return (
-	<div style={Parentdiv} className="parent">
-	<div style={Childdiv}>
-		<span style={progresstext}>{`${progress}%`}</span>
-	</div>
-	</div>
+		<div style={Parentdiv} className="parent">
+			<div style={Childdiv}>
+				<span style={progresstext}>{`${progress}%`}</span>
+			</div>
+		</div>
 	)
 }
 

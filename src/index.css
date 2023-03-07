@@ -13,12 +13,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code, p, h3 {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+code,
+p,
+h3 {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-    font-weight: 500;
-    font-size: 0.9rem;
-  }
+  font-weight: 500;
+  font-size: 0.9rem;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -27,22 +29,22 @@ code, p, h3 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 15px black; 
+  box-shadow: inset 0 0 15px black;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #57BCDA; 
+  background: #57bcda;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #57BCDA; 
+  background: #57bcda;
 }
 
 ::selection {
   color: white;
-  background: #57BCDA;
+  background: #57bcda;
 }

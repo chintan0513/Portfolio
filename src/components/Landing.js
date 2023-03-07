@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import '../styles/landing.css';
 
 const Landing = () => {
-    return ( 
+    return (
         <div className='landing' id="home">
             <div className="intro">
                 <div className="name">
@@ -11,16 +11,16 @@ const Landing = () => {
                     <span className='my-name'>I'm Chintan Tripathi</span>
                 </div>
                 <div className="typewrite">
-                    <Typewriter onInit={(typewriter)=> {
-                    typewriter.typeString("CODER").pauseFor(1000).deleteAll()
-                    .typeString("TRAVELER").pauseFor(1000).deleteAll()
-                    .typeString("FOODIE").pauseFor(1000).start();
-                }}/>
+                    <Typewriter onInit={(typewriter) => {
+                        typewriter.typeString("CODER").pauseFor(1000).deleteAll()
+                            .typeString("TRAVELER").pauseFor(1000).deleteAll()
+                            .typeString("FOODIE").pauseFor(1000).start();
+                    }} />
                 </div>
 
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default Landing;

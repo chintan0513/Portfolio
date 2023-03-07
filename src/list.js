@@ -1,4 +1,4 @@
-import projects from "./projects"; 
+import projects from "./projects";
 
 export function getProject() {
     const projectList = projects;
