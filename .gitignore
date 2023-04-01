@@ -9,10 +9,10 @@
 /coverage
 
 # production
-/build
-.build
-/portfolio
-.portfolio
+
+portfolio
+build
+portfolio
 
 # misc
 .DS_Store
