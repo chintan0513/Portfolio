@@ -33,9 +33,19 @@ const Skills = () => {
                     </div>
                     <div className='skill'>
                         <h3>Mongodb</h3>
-                        <Progressbar class="Progressbar" bgcolor="#57BCDA" progress='60'  height={30} />
-                    </div>                    
-                </div>           
+                        <Progressbar class="Progressbar" bgcolor="#57BCDA" progress='60' height={30} />
+                    </div>
+                </div>
+                <div className='skills-sec'>
+                    <div className='skill'>
+                        <h3>Tailwind CSS</h3>
+                        <Progressbar class="Progressbar" bgcolor="#57BCDA" progress='95' height={30} />
+                    </div>
+                    {/* <div className='skill'>
+                        <h3>Mongodb</h3>
+                        <Progressbar class="Progressbar" bgcolor="#57BCDA" progress='60' height={30} />
+                    </div> */}
+                </div>
             </div>
         </div>
     );
