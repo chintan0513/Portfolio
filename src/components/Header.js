@@ -2,11 +2,11 @@ import '../styles/header.css';
 import main from '../assets/2.png'
 
 const Header = () => {
-    
-    return ( 
+
+    return (
         <div className='header'>
             <div className='logo'>
-                <img src={main} className="image-logo" alt='logo'/>
+                <img src={main} className="image-logo" alt='logo' />
             </div>
             <div className="links">
                 <a href="#home">HOME</a>
@@ -15,7 +15,7 @@ const Header = () => {
                 <a href="#contact">CONTACT</a>
             </div>
         </div>
-        );
+    );
 }
- 
+
 export default Header;

@@ -5,7 +5,7 @@ import Landing from "./Landing";
 import Projects from "./Projects";
 
 const Home = () => {
-    return ( 
+    return (
         <div>
             <Header />
             <Landing />
@@ -13,7 +13,7 @@ const Home = () => {
             <Projects />
             <Contact />
         </div>
-     );
+    );
 }
- 
+
 export default Home;
