@@ -9,10 +9,7 @@
 /coverage
 
 # production
-
-portfolio
 build
-portfolio
 
 # misc
 .DS_Store
