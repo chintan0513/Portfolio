@@ -21,8 +21,8 @@ const Contact = () => {
       'BEzHUk12PVKwoyiwf'
     )
       .then((response) => {
-        toast.success('Stay Tuned! I will get back to you soon.');
         window.location.reload();
+        toast.success('Stay Tuned! I will get back to you soon.');
         // console.log('SUCCESS!', response.status, response.text);
       })
       .catch((err) => {
