@@ -1,6 +1,6 @@
 import pic from '../assets/46.jpg'
 import '../styles/about.css'
-import { BsInstagram, BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FiCode } from 'react-icons/fi';
 import Skills from './Skills';
 
