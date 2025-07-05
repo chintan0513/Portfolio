@@ -1,81 +1,74 @@
 .skills {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   width: 100%;
+  padding: 20px 10px;
+  font-family: "Segoe UI", "Helvetica Neue", "Roboto", sans-serif;
 }
 
 .skills-set {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  animation: flipInX 4s ease forwards;
-}
-
-.skills-sec {
-  /* display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center; */
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
-.skill {
+.skill-section {
+  margin: 30px 0;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.skill-category {
+  font-size: clamp(1.3rem, 2vw + 0.5rem, 1.7rem);
+  color: #57bcda;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #57bcda;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-family: "Megrim", cursive, sans-serif;
+}
+
+.skill-badges {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  text-transform: uppercase;
-  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  max-width: 900px;
 }
 
-@media only screen and (max-width: 400px) {
-  .skills-set {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100px;
-    align-items: center;
-    margin: 0px auto;
-  }
+.skill-badge {
+  background-color: #111827;
+  color: #e5e7eb;
+  border: 1px solid #57bcda;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
+  font-weight: 500;
+  font-family: "Segoe UI", "Helvetica Neue", "Roboto", sans-serif;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
 
-  .skills-sec {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .skill {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-  }
+.skill-badge:hover {
+  background-color: #57bcda;
+  color: #111827;
+  transform: scale(1.05);
+}
 
-  .parent {
-    margin: 10px;
+@media screen and (max-width: 768px) {
+  .skill-section {
+    margin: 20px 0;
   }
 }
 
-@keyframes flipInX {
-  0% {
-    transform: perspective(400px) rotateY(90deg);
-    opacity: 0;
-  }
-  40% {
-    transform: perspective(400px) rotateY(-20deg);
-  }
-  60% {
-    transform: perspective(400px) rotateY(10deg);
-  }
-  80% {
-    transform: perspective(400px) rotateY(5deg);
-  }
-  100% {
-    transform: perspective(400px);
-    opacity: 1;
+@media screen and (max-width: 480px) {
+  .skill-badges {
+    gap: 8px;
+    max-width: 95%;
   }
 }

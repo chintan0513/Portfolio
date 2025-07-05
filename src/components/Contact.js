@@ -1,32 +1,26 @@
-import '../styles/contact.css';
-import Footer from './Footer'
-import { send } from 'emailjs-com';
-import { useState } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import "../styles/contact.css";
+import Footer from "./Footer";
+import { send } from "emailjs-com";
+import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
-
   const [toSend, setToSend] = useState({
-    from_name: '',
-    reply_to: '',
-    message: ''
+    from_name: "",
+    reply_to: "",
+    message: "",
   });
 
   const onSubmit = (e) => {
     e.preventDefault();
-    send(
-      'service_axra8ha',
-      'template_qr9s3wc',
-      toSend,
-      'BEzHUk12PVKwoyiwf'
-    )
-      .then((response) => {
+    send("service_axra8ha", "template_qr9s3wc", toSend, "BEzHUk12PVKwoyiwf")
+      .then(() => {
         window.location.reload();
-        toast.success('Stay Tuned! I will get back to you soon.');
-        // console.log('SUCCESS!', response.status, response.text);
+        toast.success("Stay Tuned! I will get back to you soon.");
       })
       .catch((err) => {
-        console.log('FAILED...', err);
+        console.error("FAILED...", err);
+        toast.error("Oops! Something went wrong.");
       });
   };
 
@@ -35,21 +29,46 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" id="contact">
-      <h1 className="h1" style={{ color: 'white' }}>Contact Me</h1>
-      <p>Have a question? Ping me..</p>
-      <div style={{ fontFamily: 'source-code-pro' }}><Toaster /></div>
-      <div className="form">
+    <section className="contact" id="contact">
+      <h1 className="h1">Contact Me</h1>
+      <p className="subtitle">
+        Have a question or want to work together? Let's connect!
+      </p>
+      <Toaster />
+      <div className="form-container">
         <form className="form-group" onSubmit={onSubmit}>
-          <input type='text' name='from_name' placeholder='Name' value={toSend.from_name} onChange={handleChange} required className="Name" />
-          <input type='email' name='reply_to' placeholder='Your Email' value={toSend.reply_to} onChange={handleChange} required />
-          <textarea type='text' name='message' placeholder='Your Message' value={toSend.message} onChange={handleChange} required />
-          <button type="submit" className="btn">Send</button>
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Your Name"
+            value={toSend.from_name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="reply_to"
+            placeholder="Your Email"
+            value={toSend.reply_to}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            value={toSend.message}
+            onChange={handleChange}
+            rows="5"
+            required
+          />
+          <button type="submit" className="btn">
+            Send Message
+          </button>
         </form>
       </div>
       <Footer />
-    </div>
+    </section>
   );
-}
+};
 
 export default Contact;

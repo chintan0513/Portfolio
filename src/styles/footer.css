@@ -1,13 +1,13 @@
 .footer {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    bottom: 0px;
-    font-size: 1rem;
-    width: 100%;
-} 
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 0px;
+  font-size: 1rem;
+  width: 100%;
+}
 
-.footer a{
-    text-decoration: none;
-    color: #57BCDA;
+.footer a {
+  text-decoration: none;
+  color: #57bcda;
 }
