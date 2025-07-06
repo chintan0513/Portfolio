@@ -3,6 +3,8 @@ import "../styles/about.css";
 import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import { FiCode } from "react-icons/fi";
 import Skills from "./Skills";
+import Certifications from "./Certifications";
+import Timeline from "./Timeline";
 
 const About = () => {
   return (
@@ -73,7 +75,9 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Timeline />
       <Skills />
+      <Certifications />
     </div>
   );
 };

@@ -1,0 +1,86 @@
+.timeline {
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", "Helvetica Neue", "Roboto", sans-serif;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 850px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  background: #f9fafb;
+  border-left: 4px solid #57bcda;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 20px 25px 15px 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item.clickable {
+  cursor: pointer;
+}
+
+.timeline-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background: #e6f7fb;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -12px;
+  top: 20px;
+  width: 18px;
+  height: 18px;
+  background: #57bcda;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.timeline-content h3 {
+  font-size: 1.15rem;
+  color: #111827;
+  margin: 0 0 4px 0;
+}
+
+.timeline-location {
+  font-size: 0.9rem;
+  color: #2563eb;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.timeline-content ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.timeline-content ul li {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-item {
+    padding: 15px 20px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
+
+  .timeline-content ul li {
+    font-size: 0.9rem;
+  }
+}
