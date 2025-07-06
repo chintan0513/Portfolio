@@ -3,7 +3,7 @@ import "../styles/timeline.css";
 
 const experiences = [
   {
-    role: "Data Analyst Co-op",
+    role: "Data Analyst and Developer Intern",
     company: "RBC",
     location: "Toronto, Canada",
     date: "Sep 2024 - Apr 2025",
